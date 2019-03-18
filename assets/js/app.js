@@ -40,7 +40,6 @@ $(document).ready(function () {
                 var recipeLink = recipeRes.hits[x].recipe.url;
                 calories = Math.round(calories);
 
-                console.log(recipeLink);
                 //display info on recipes
                 dinnerSugg.append("<hr><a href="+ recipeLink + " target=\"_blank\"><h6 data-link=" + recipeLink + " class='recipeInfo'>" + recipeName + "</h6><p>Yields " + servings + " servings</p><p>" + calories + " calories</p></a>");
             }
