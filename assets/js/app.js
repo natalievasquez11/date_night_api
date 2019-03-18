@@ -40,8 +40,9 @@ $(document).ready(function () {
                 var recipeLink = recipeRes.hits[x].recipe.url;
                 calories = Math.round(calories);
 
+                console.log(recipeLink);
                 //display info on recipes
-                dinnerSugg.append("<hr><h6 data-link=" + recipeLink + " class='recipeInfo'>" + recipeName + "</h6><p>Yields " + servings + " servings</p><p>" + calories + " calories</p>");
+                dinnerSugg.append("<hr><a href="+ recipeLink + " target=\"_blank\"><h6 data-link=" + recipeLink + " class='recipeInfo'>" + recipeName + "</h6><p>Yields " + servings + " servings</p><p>" + calories + " calories</p></a>");
             }
         })
         var message = $("<h5>Click the button below for more fun date ideas!</h5><p>HINT: Keep clicking for more ideas</p>");
@@ -49,9 +50,9 @@ $(document).ready(function () {
         $("#nightInIdeas").append(message).append("<button class='inIdeas btn-floating btn-large pink pulse'><i class='material-icons'>favorite</i></button><br><br>");
     })
 
-    // $(document).on("click", ".recipeInfo", function() {
-    //     console.log($(this).attr("data-link"));
-    // })
+    $(document).on("click", ".recipeInfo", function() {
+        console.log($(this).attr("data-link"));
+    })
 
     $(document).on("click", ".inIdeas", function() {
        scroll(500);
