@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Date Night</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="banner">
+        <img src="assets/images/dateNightBanner.png" />
+    </div>
+    <div>
+        <h4 class="center-align">What type of date would you like?</h4>
+        <h5 class="center-align">Choose one option below.</h5>
+    </div>
+    <div class="row">
+
+        <div class="col s3 dateOpt center-align offset-s3">
+            <div id="dateOpt1" class="card-panel hoverable">
+                <span>
+                    <h5>DATE NIGHT IN</h5>
+                    <p>A romantic and cozy day filled with activities at home.</p>
+                    <img src="assets/images/dateIn.jpg" alt="date night in" class="circle cardImg" />
+                </span>
+            </div>
+        </div>
+        <div class="col l3 dateOpt center-align ">
+            <div id="dateOpt2" class="card-panel hoverable">
+                <span>
+                    <h5>DATE NIGHT OUT</h5>
+                    <p>A romantic and fun night (or day) out on the town.</p>
+                    <img src="assets/images/dateOut.jpg" alt="date night in" class="circle cardImg" />
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="prompt1" class="center-align"></div>
+
+    <div class="row">
+        <div id='recipeSearch' class="col s4 offset-s4"></div>
+    </div>
+
+    <div id="recipeButton" style="text-align:center"></div>
+    <br>
+
+    <div id="stepTwo">
+        <div id="stepTwoRow" class="row">
+        </div>
+    </div>
+
+    <div id="inStepTwo">
+            <div id="inStepTwoRow" class="row">
+                <div class="col s3"></div>
+                <div class="col s6 inDinnerOpt center-align z-depth-2"></div>
+                <div class="col s3"></div>
+            </div>
+        </div>
+
+    <div id="prompt2" class="center-align"></div>
+
+    <div class="row">
+        <div id="zipCode" class="col s4 offset-s4"></div>
+    </div>
+
+    <div id="submitButton" style="text-align:center"></div>
+    <br>
+
+    <div id="stepThree">
+            <div id="stepThreeRow" class="row">
+                <div class="col s1"></div>
+                <div class="col s5 dinnerOpt center-align z-depth-2"></div>
+                <div class="col s5 movieOpt center-align z-depth-2"></div>
+            </div>
+        </div>
+
+    <div id="nightOutIdeas" style="text-align:center"></div>
+    <div id="nightInIdeas" style="text-align:center"></div>
+
+    <div id="randomDiv" class="center-align">
+        <span id="randomIdea""></span>
+    </div><br>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body {
+    margin: 0px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 375px;
+}
+
+div {
+    margin: 0;
+}
+
+#randomDiv {
+    margin: 0 auto;
+}
+
+.card-panel {
+    height: 275px;
+    color: grey;
+    background-color: #e8e8e8;
+}
+
+.cardImg {
+    height: 110px;
+    width: 110px;
+}
+
+.collection-header {
+    font-size: 30px;
+}
+
+.poster {
+    height: 75px;
+    width: 65px;
+}
+
+.dinnerOpt:empty {
+    display: none;
+}
+
+.movieOpt:empty {
+    display: none;
+}
+
+.inDinnerOpt:empty {
+    display: none;
+}
+
+.dinnerOpt {
+    line-height: 10%;
+    color: grey;
+    background-color: #e8e8e8;
+    padding: 0;
+    margin: 0 10px 0 5px;
+}
+
+.movieOpt {
+    line-height: 10%;
+    color: grey;
+    background-color: #e8e8e8;
+    padding: 0;
+    margin: 0 5px 0 10px;
+   }
+
+.inDinnerOpt {
+    line-height: 10%;
+    color: grey;
+    background-color: #e8e8e8;
+    padding: 0;
+    margin: 0 5px 0 10px;
+   }
+
+.dateIdea {
+    height: 400px;
+    width: 300px;
+}
+
+
+
+
