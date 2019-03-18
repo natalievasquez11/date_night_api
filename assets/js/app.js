@@ -211,7 +211,7 @@ $(document).ready(function () {
                     if (moment().diff(releaseDate, 'weeks') <= 3 && custRating >= 6 && popularity >= 40) {
                         //omdb api call to get movie details
                         $.ajax({
-                            url: 'http://www.omdbapi.com/?t=' + movieListing + '&type=movie&r=json&y=' + currYear + '&apikey=65c38f10',
+                            url: 'https://www.omdbapi.com/?t=' + movieListing + '&type=movie&r=json&y=' + currYear + '&apikey=65c38f10',
                             method: 'GET'
                         }).done(function (response2) {
                             var movRating = response2.Rated;
