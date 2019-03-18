@@ -130,7 +130,7 @@ $(document).ready(function () {
         //call dinner suggestion function with specific price range depending on which budget card is clicked
         nightOutSugg($(this).attr("data-price"));
 
-        var message = $("<h5>Click the button below for more fun date ideas!</h5>")
+        var message = $("<h5>Click the button below for more fun date ideas!</h5><p>HINT: Keep clicking for more ideas</p>")
         //get more ideas button
         $("#nightOutIdeas").append(message).append("<button class='outIdeas btn-floating btn-large pink pulse'><i class='material-icons'>favorite</i></button><br><br>");
     });
